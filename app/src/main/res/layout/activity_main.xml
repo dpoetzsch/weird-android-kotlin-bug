@@ -7,8 +7,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.MainActivity">
 
-    <com.example.CustomView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:text="BLUB"
+        android:id="@+id/text"/>
 
 </android.support.constraint.ConstraintLayout>
