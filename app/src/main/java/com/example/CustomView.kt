@@ -28,8 +28,21 @@ class CustomView : LinearLayout {
         LayoutInflater.from(context).inflate(R.layout.view_custom, this, true)
 
         val text = findViewById(R.id.text)
+
+        // this works
+//        text.onFocusChangeListener = View.OnFocusChangeListener { _: View?, hasFocus: Boolean ->
+//        }
+
+        // this works as well
+//        text.setOnFocusChangeListener { _: View?, hasFocus: Boolean ->
+//        }
+
+        // This does not work
         text.onFocusChangeListener = OnFocusChangeListener { _: View?, hasFocus: Boolean ->
-            // not even doing anything
         }
+
+        // This also does not work!
+//        text.setOnFocusChangeListener(OnFocusChangeListener { _: View?, hasFocus: Boolean ->
+//        })
     }
 }
